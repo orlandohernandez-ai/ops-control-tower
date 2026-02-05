@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: ops_control_tower_db
+    restart: always
+    environment:
+      POSTGRES_USER: tower_user
+      POSTGRES_PASSWORD: tower_password
+      POSTGRES_DB: ops_tower
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
