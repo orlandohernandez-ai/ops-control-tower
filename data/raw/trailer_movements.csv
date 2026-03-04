@@ -1,0 +1,4 @@
+trailer_id,origin,destination,delay_minutes
+TRL001,Chicago,Atlanta,10
+TRL002,Dallas,Nashville,35
+TRL003,Memphis,Chicago,5
